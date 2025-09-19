@@ -15,7 +15,7 @@ public class Simulator extends Bonus {
         return new int[] {health, attack};
     }
 
-    String gameplay() {
+    String run() {
         int[] computer = CPU();
         int[] player = new Bonus(mageVal, archerVal, halberdierVal, cavalryVal, civ).calculator();
         int days = 0;

@@ -43,7 +43,7 @@ public class Main {
             System.out.println("Halberdiers: " + halVal);
             System.out.println("\nNow march forth to invade the enemy kingdom, may your banner fly high in victory!");
 
-            String outcome = new Simulator(magVal, arcVal, halVal, cavVal, civ, level).gameplay();
+            String outcome = new Simulator(magVal, arcVal, halVal, cavVal, civ, level).run();
             System.out.println(outcome);
         }
 
