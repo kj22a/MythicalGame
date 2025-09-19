@@ -1,8 +1,8 @@
 public class Simulator extends Bonus {
     int level;
 
-    Simulator(int mageVal, int archerVal, int halberdierVal, int cavalryVal, char civ, int level) {
-        super(mageVal, archerVal, halberdierVal, cavalryVal, civ);
+    Simulator(int mageVal, int archerVal, int halberdierVal, int cavalryVal, char civilisation, int level) {
+        super(mageVal, archerVal, halberdierVal, cavalryVal, civilisation);
         this.level = level;
     }
 
@@ -17,7 +17,7 @@ public class Simulator extends Bonus {
 
     String run() {
         int[] computer = CPU();
-        int[] player = new Bonus(mageVal, archerVal, halberdierVal, cavalryVal, civ).calculator();
+        int[] player = new Bonus(mageVal, archerVal, halberdierVal, cavalryVal, civilisation).calculator();
         int days = 0;
 
         while (true) {

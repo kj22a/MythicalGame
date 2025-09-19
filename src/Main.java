@@ -13,7 +13,7 @@ public class Main {
         System.out.println("For Ummayad type the letter U");
         System.out.println("For Aztecs type the letter A");
         System.out.print("Your choice: ");
-        char civ = scanner.next().charAt(0);
+        char civilisation = scanner.next().charAt(0);
         System.out.print("\nChoose the difficulty level of the campaign (1 to 20): ");
         int level = scanner.nextInt();
         System.out.println("\nYou command 1000 warriors. Distribute them wisely between:");
@@ -43,7 +43,7 @@ public class Main {
             System.out.println("Halberdiers: " + halVal);
             System.out.println("\nNow march forth to invade the enemy kingdom, may your banner fly high in victory!");
 
-            String outcome = new Simulator(magVal, arcVal, halVal, cavVal, civ, level).run();
+            String outcome = new Simulator(magVal, arcVal, halVal, cavVal, civilisation, level).run();
             System.out.println(outcome);
         }
 
